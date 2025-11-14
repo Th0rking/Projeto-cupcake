@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Montagem Personalizada - Loja do Cupcake</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Montagem Personalizada</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Cardápio</a>
+      <a href="carrinho.html">Carrinho</a>
+    </nav>
+  </header>
+  <main>
+    <form id="form-montagem">
+      <label for="massa">Selecione a Massa:</label>
+      <select id="massa" name="massa">
+        <option value="chocolate">Chocolate</option>
+        <option value="baunilha">Baunilha</option>
+        <option value="red-velvet">Red Velvet</option>
+      </select>
+
+      <label for="recheio">Selecione o Recheio:</label>
+      <select id="recheio" name="recheio">
+        <option value="doce-de-leite">Doce de Leite</option>
+        <option value="ganache">Ganache</option>
+        <option value="creme">Creme</option>
+      </select>
+
+      <label for="cobertura">Selecione a Cobertura:</label>
+      <select id="cobertura" name="cobertura">
+        <option value="buttercream">Buttercream</option>
+        <option value="ganache">Ganache</option>
+        <option value="merengue">Merengue</option>
+      </select>
+
+      <label for="extras">Adicionais:</label>
+      <input type="checkbox" id="granulado" name="extras" value="granulado">Granulado
+      <input type="checkbox" id="frutas" name="extras" value="frutas">Frutas
+
+      <button type="submit">Adicionar ao Carrinho</button>
+    </form>
+  </main>
+  <script src="js/carrinho.js"></script>
+</body>
+</html>
